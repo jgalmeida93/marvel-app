@@ -14,7 +14,7 @@ A modern React application built with Vite for lightning-fast development.
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/your-project-name.git
+git clone git@github.com:jgalmeida93/marvel-app.git
 ```
 
 2. Install dependencies:
