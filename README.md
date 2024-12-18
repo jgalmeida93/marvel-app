@@ -19,12 +19,14 @@ git clone https://github.com/yourusername/your-project-name.git
 
 2. Install dependencies:
 
-````bash
+```bash
 npm install
+```
 
 3. Make sure you have setup your environment variables.
 
 4. Start development server:
+
 ```bash
 npm run dev
-````
+```
