@@ -1,14 +1,15 @@
 import { initializeApp } from 'firebase/app'
 import { getAuth, GithubAuthProvider, GoogleAuthProvider } from 'firebase/auth'
 
+
 const firebaseConfig = {
-  apiKey: "AIzaSyDJdHfen72AuuXfP6o_kuOYH9vrKVJvhVg",
-  authDomain: "marvel-app-ee21d.firebaseapp.com",
-  projectId: "marvel-app-ee21d",
-  storageBucket: "marvel-app-ee21d.firebasestorage.app",
-  messagingSenderId: "979336921532",
-  appId: "1:979336921532:web:15c809bbd49939199fabb9",
-  measurementId: "G-74MCHF5K8Y"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 }
 
 const app = initializeApp(firebaseConfig)

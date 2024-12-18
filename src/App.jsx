@@ -5,19 +5,16 @@ import {
   Navigate,
 } from "react-router-dom";
 import { useAuthState } from "react-firebase-hooks/auth";
-import { Login } from "./components/Login";
-import { Home } from "./components/Home";
-import { auth } from "./config/firebase";
+import { Login } from "@components/Login";
+import Home from "@components/Home";
+import { auth } from "@config/firebase";
+import Loading from "@components/Loading";
 
 function PrivateRoute({ children }) {
   const [user, loading] = useAuthState(auth);
 
   if (loading) {
-    return (
-      <div className="min-h-screen bg-gray-900 flex items-center justify-center">
-        <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-red-600"></div>
-      </div>
-    );
+    return <Loading />;
   }
 
   return user ? children : <Navigate to="/login" />;

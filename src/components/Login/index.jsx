@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { signInWithGithub, signInWithGoogle } from "../services/auth";
+import { signInWithGithub, signInWithGoogle } from "@services/auth";
 
 export function Login() {
   const navigate = useNavigate();
@@ -18,7 +18,7 @@ export function Login() {
           <h2 className="text-3xl font-bold text-white mb-2">
             Welcome to Marvel App
           </h2>
-          <p className="text-gray-400">
+          <p className="text-gray-400" data-testid="welcome-message">
             Sign in to explore the Marvel universe
           </p>
         </div>
@@ -26,6 +26,7 @@ export function Login() {
         <div className="space-y-4">
           <button
             onClick={handleGithubLogin}
+            data-testid="github-button"
             className="w-full flex items-center justify-center gap-3 bg-gray-700 hover:bg-gray-600 text-white font-semibold py-3 px-4 rounded-lg transition duration-300"
           >
             <svg
@@ -45,6 +46,7 @@ export function Login() {
 
           <button
             onClick={handleGoogleLogin}
+            data-testid="google-button"
             className="w-full flex items-center justify-center gap-3 bg-white hover:bg-gray-100 text-gray-800 font-semibold py-3 px-4 rounded-lg transition duration-300"
           >
             <svg className="w-6 h-6" viewBox="0 0 24 24">
