@@ -2,13 +2,6 @@
 
 A modern React application built with Vite for lightning-fast development.
 
-## Features
-
-- ⚡️ Blazing fast development with Vite
-- ⚛️ React 18
-- 🔥 Hot Module Replacement (HMR)
-- 🎨 ESLint configured
-
 ## Getting Started
 
 1. Clone the repository:
