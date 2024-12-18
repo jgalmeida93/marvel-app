@@ -25,6 +25,10 @@ npm install
 
 3. Make sure you have setup your environment variables.
 
+```bash
+cp .env.example .env
+```
+
 4. Start development server:
 
 ```bash
